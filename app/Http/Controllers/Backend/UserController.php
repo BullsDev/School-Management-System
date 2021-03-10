@@ -10,10 +10,6 @@ class UserController extends Controller
 {
     public function UserView(){
 
-        // Using Eloquent ORM Option
-        
-        // $allData = User::all();
-        // return view('backend.user.view_user',compact('allData'));
 
         $data['allData'] = User::all();
         return view('backend.user.view_user', $data);
